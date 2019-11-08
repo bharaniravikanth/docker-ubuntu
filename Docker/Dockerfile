@@ -12,9 +12,9 @@ RUN apt-get -y install telnet
 
 RUN apt-get -y install nano
 
-RUN mkdir /opt/lib/jdk
+RUN mkdir /opt/jdk
 
-COPY jdk /opt/lib/jdk
+COPY jdk /opt/jdk
 
 RUN ls -lrt /opt/lib/
 
