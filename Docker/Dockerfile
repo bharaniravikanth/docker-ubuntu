@@ -14,7 +14,7 @@ RUN apt-get -y install nano
 
 RUN mkdir /opt/jdk
 
-#COPY jdk /opt/jdk
+COPY jdk /opt/jdk
 
 RUN ls -lrt /opt/lib/
 
