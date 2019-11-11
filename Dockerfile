@@ -4,6 +4,7 @@ FROM bharaniravikanth/ubuntu-eric:initial-commit
 
 MAINTAINER "Bharani Ravi Kanth R"
 
+
 RUN apt-get update
 
 RUN apt-get -y install vim
