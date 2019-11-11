@@ -2,7 +2,7 @@
 
 FROM bharaniravikanth/ubuntu-eric:initial-commit
 
-MAINTAINER "Bharani Ravi Kanth R <ERBHKAN>"
+MAINTAINER "Bharani Ravi Kanth R"
 
 RUN apt-get update
 
