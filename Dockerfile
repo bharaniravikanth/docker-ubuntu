@@ -4,7 +4,6 @@ FROM bharaniravikanth/ubuntu-eric:initial-commit
 
 MAINTAINER "Bharani Ravi Kanth R"
 
-
 RUN apt-get update
 
 RUN apt-get -y install vim
@@ -19,9 +18,9 @@ RUN apt-get -y install nano
 
 #RUN ls -lrt /opt/lib/
 
-RUN adduser drutt
+RUN adduser bharani
 
-RUN echo 'drutt:drutt' |chpasswd
+RUN echo 'bharani:bharani' |chpasswd
 
 RUN apt-get install -y openssh-server
 
@@ -35,7 +34,7 @@ RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 
 RUN mkdir /root/.ssh
 
-RUN mkdir /home/drutt/.ssh
+RUN mkdir /home/bharani/.ssh
 
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
